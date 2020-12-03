@@ -31,7 +31,7 @@ New object is populated with one empty document in list.
 
 When adding a complex object to a list, we don't want any fields of this object to be populated unless they have some defaultValue set. This goes even more important for the lists that must be populated by user.
 
-Imagine we have a list of documents that user should upload. For each document he should have a country name document is related to, and file. We store files in document as file ids. File Backend is irrelevant. So we create this two schemas:
+Imagine we have a list of documents that user should upload. For each document he should fill in a country name document is related to; and upload a photo of document. We store files in `documents` Array field as list of String file ids. So we create this two schemas:
 
 ```js
 // single object schema
